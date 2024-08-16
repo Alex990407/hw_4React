@@ -1,0 +1,23 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.city-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+.city-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.city-card h2 {
+  margin-top: 0;
+}
