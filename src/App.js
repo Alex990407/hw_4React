@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import CitySelector from "./components/CitySelector";
-import CityCard from "./components/CityCard";
+import CitySelector from "./components/cityCard/CitySelector";
+import CityCard from "./components/cityCard/CityCard";
+import MathQuiz from "./components/MathQuiz/MathQuiz";
 import "./App.css";
 
 const citiesData = [
@@ -81,6 +82,17 @@ const App = () => {
     >
       <CitySelector cities={citiesData} onCityChange={handleCityChange} />
       <CityCard city={selectedCity} />
+      <div
+        style={{
+          margin: "30px",
+          backgroundColor: "teal",
+          color: "white",
+          minHeight: "100vh",
+          fontFamily: "Arial, sans-serif",
+        }}
+      >
+        <MathQuiz />
+      </div>
     </div>
   );
 };
